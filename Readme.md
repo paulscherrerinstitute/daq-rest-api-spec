@@ -3,7 +3,7 @@
 Based upon our experience with the current API and system we can collect issues
 and ideas towards an API version 2 specification.
 
-I started to collect some issues right here in markdown, and wen could open
+I started to collect some issues right here in markdown, and we could open
 separate markdown files to collect details.
 
 Or we can use the Github issues themselves and only keep the evolving v2 specs
@@ -28,7 +28,7 @@ in general.
 The current API delivers timestamps as floating point number in units
 of seconds. Since JS uses IEEE 64 bit floats, we can not use a single number
 in the JSON response because JS looses precision. The current API uses a
-stringified float, e.g. "123000123.456456". To do arithmetic with thentimestamp,
+stringified float, e.g. "123000123.456456". To do arithmetic with the timestamp,
 one has to convert them.
 The proposed solution to represent a timestamp of e.g. 123000123.456000456s
 is to split the number:
